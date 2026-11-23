@@ -1,59 +1,27 @@
-# MyWorkspace
+# Rick & Morty UI Component Library
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.30.
+Este proyecto es una prueba técnica para Frontend Developer. Consiste en un **Angular Workspace** que contiene una librería de componentes UI reutilizables (`ui-lib`) y una aplicación demo (`demo-app`) que la consume para explorar la API de Rick and Morty.
 
-## Development server
+## 🏗️ Arquitectura del Proyecto
 
-To start a local development server, run:
+El workspace está dividido en dos proyectos principales:
+- **`projects/ui-lib`**: Librería de componentes standalone desarrollada con Angular 21, TypeScript estricto y Tailwind CSS v3.
+- **`projects/demo-app`**: Aplicación que consume la librería. Se encarga de la lógica de negocio, el estado global (mediante Signals) y las peticiones HTTP.
 
-```bash
-ng serve
-```
+## 🚀 Requisitos Previos
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Node.js (v20 o superior)
+- Angular CLI (`npm install -g @angular/cli`)
 
-## Code scaffolding
+## 🛠️ Instalación y Ejecución
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Clona el repositorio.
+2. Instala las dependencias:
+   ```bash
+   npm install
 
-```bash
-ng generate component component-name
-```
+Levanta la aplicación demo
+ng serve demo-app
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Abre tu navegador en http://localhost:4200
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
