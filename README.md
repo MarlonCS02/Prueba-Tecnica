@@ -25,24 +25,3 @@ ng serve demo-app
 
 Abre tu navegador en http://localhost:4200
 
----
-
-### 2. `DEVELOPMENT_LOG.md` (En la raíz de `my-workspace`)
-
-Crea este archivo en la raíz y pega lo siguiente. (He puesto ejemplos basados en lo que hemos hablado, siéntete libre de expandirlo):
-
-```markdown
-# Bitácora de Desarrollo - Prueba Técnica Frontend
-
-Este documento detalla el proceso de desarrollo, las decisiones tomadas, los retos encontrados y el uso de herramientas de IA durante la realización de la prueba técnica.
-
-## 1. Retos y Soluciones
-
-### Reto 1: Configuración de Tailwind CSS en una Librería Angular
-**Problema:** Al principio, los estilos de Tailwind no se aplicaban a los componentes dentro de `ui-lib` cuando se consumían en `demo-app`. 
-**Solución:** Se descubrió que el archivo `tailwind.config.js` en la raíz solo estaba escaneando la carpeta de la demo. Se modificó la propiedad `content` para incluir ambas rutas:
-```javascript
-content: [
-  "./projects/ui-lib/src/**/*.{html,ts}",
-  "./projects/demo-app/src/**/*.{html,ts}",
-]
